@@ -1,0 +1,40 @@
+.method_part {
+    position: relative;
+
+    background: {
+        image: url(../images/method_bg_1.png);
+        repeat: no-repeat;
+        size: cover;
+        position: center center;
+    }
+
+    .method_img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        img {
+            max-width: 90%;
+        }
+
+        ;
+    }
+
+    .method_content {
+        padding: 270px 0px 200px;
+
+        .method_content_box {
+            @include commonBox(9px);
+            text-align: left;
+
+            h2 {
+                background-color: $pColor;
+                @include textPoperty(58.33px, $fontXb, $sColor, uppercase, 13px, 0px, 22px, 30px);
+            }
+
+            p {
+                @include textPoperty(33px, $fontR, $wColor, unset, 20px, 35px, 20px, 35px);
+            }
+        }
+    }
+}

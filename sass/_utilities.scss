@@ -1,0 +1,95 @@
+@import "variable.scss";
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 29.11 px;
+    background-color: $sColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+img,
+input,
+form,
+label,
+span,
+button,
+.navbar,
+nav,
+div,
+.navbar-brand,
+.btn {
+    padding: 0;
+    margin: 0;
+}
+
+
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+a {
+    font: {
+        size: 33.33px !important;
+        weight: $fontB !important;
+    }
+
+    text-transform: capitalize;
+}
+
+// Common Padding & Margin
+.my_60 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.mt_60 {
+    margin-top: 60px;
+}
+
+.mb_60 {
+    margin-bottom: 60px;
+}
+
+// Menu Item Position
+.m_item_02,
+.m_item_05 {
+    margin-left: 2.5%;
+}
+
+.m_item_03,
+.m_item_06 {
+    float: right;
+}

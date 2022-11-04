@@ -1,0 +1,67 @@
+.banner_part {
+    .banner_slider {
+        .banner_slider_item {
+            padding: 230px 0px 165px;
+
+            background: {
+                image: url(../images/banner_bg.png);
+                size: cover;
+                position: 100%, 100%;
+                repeat: no-repeat;
+            }
+
+            .slider_content {
+                @include commonBox(11px);
+
+                h2 {
+                    @include textPoperty(46.74px, $fontXb, $sColor, capitalize, 11px, 35px, 22px, 35px);
+                }
+
+                p {
+                    @include textPoperty(41.21px, $fontB, $wColor, capitalize, 20px, 0px, 20px, 0px);
+                }
+            }
+
+            h1 {
+                @include textPoperty(42.57px, $fontL, $wColor, capitalize, 60px, 0px, 0px, 0px);
+            }
+        }
+
+        .owl-dots {
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            transform: translate(-50%, -50%);
+
+            .owl-dot {
+                width: 20px;
+                height: 20px;
+                border: 3px solid $pColor;
+                border-radius: 50%;
+                background-color: transparent;
+                margin: 0px 10px;
+            }
+
+            .active {
+                background-color: $pColor !important;
+            }
+        }
+
+        .owl-nav {
+            position: absolute;
+            left: 50%;
+            bottom: 14px;
+            transform: translate(-50%, -50%);
+
+            .arrow_lf {
+                color: $pColor;
+                margin-right: 70px;
+            }
+
+            .arrow_rt {
+                color: $pColor;
+                margin-left: 70px;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.menu_part {
+    position: relative;
+
+    background: {
+        image: url(../images/menu_bg.png);
+        repeat: no-repeat;
+        size: cover;
+        position: center center;
+    }
+
+    .overlay_menu {
+        background-image: linear-gradient(to left, rgba(25, 25, 23, 23), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
+        padding: 40px 0px 10px;
+
+        .menu_heading {
+            padding-bottom: 40px;
+            text-align: center;
+
+            h1 {
+                font-family: 'Fjalla One', sans-serif;
+                @include textPoperty(62.5px, $fontR, $wColor, uppercase, 0px, 0px, 0px, 0px);
+                display: inline;
+                background: #0000004f;
+                box-shadow: 0px 0px 118px black;
+            }
+        }
+
+        .menu_img {}
+
+        .menu_item {
+            @include commonBox(5px);
+            text-align: left;
+            width: 95%;
+
+            &:hover h4 {
+                color: $wColor;
+            }
+
+            h4 {
+                @include textPoperty(30.15px, $fontXb, $sColor, uppercase, 20px, 10px, 25px, 10px);
+                transition: all linear 0.4s;
+            }
+
+            ul {
+                padding: 18px 0px;
+
+                li {
+                    &:hover p {
+                        color: $pColor;
+                    }
+
+                    p {
+                        @include textPoperty(22.61px, $fontB, $wColor, capitalize, 7px, 10px, 7px, 10px);
+                        transition: all linear 0.4s;
+
+                        span {
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mb_50 {
+            margin-bottom: 50px;
+        }
+    }
+}

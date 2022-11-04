@@ -1,0 +1,36 @@
+.special_part {
+    padding: 80px 0px 550px;
+    margin-bottom: 160px;
+    position: relative;
+
+    background: {
+        image: url(../images/special_offer_bg.png);
+        repeat: no-repeat;
+        size: cover;
+        position: center center;
+    }
+
+    .special_item {
+        @include commonBox(5px);
+
+        h2 {
+            background-color: $pColor;
+            @include textPoperty(40.75px, $fontXb, $sColor, uppercase, 16px, 16px, 21px, 16px);
+        }
+
+        p {
+            @include textPoperty(40.75px, $fontB, $wColor, capitalize, 40px, 0px, 40px, 0px);
+        }
+    }
+
+    .special_item_details {
+        p {
+            @include textPoperty(29.11px, $fontR, $wColor, unset, 15px, 0px, 0px, 0px);
+        }
+    }
+
+    .special_img {
+        position: absolute;
+        z-index: 9999;
+    }
+}

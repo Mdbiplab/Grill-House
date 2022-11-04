@@ -1,0 +1,25 @@
+@import "variable.scss";
+
+// Common Box
+@mixin commonBox($bW) {
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    border: $bW solid $pColor;
+
+    .common_box_heading {
+        background-color: $pColor;
+    }
+}
+
+// Text Poperty
+@mixin textPoperty($fSize, $Fweight, $color, $tTransF, $pT, $pL, $pB, $pR) {
+    font: {
+        size: $fSize;
+        weight: $Fweight;
+    }
+
+    color: $color;
+    text-transform: $tTransF;
+    padding: $pT $pL $pB $pR;
+}
